@@ -97,7 +97,7 @@
               <ul class="list-group list-group-flush">
                 <li class="list-group-item text-secondary">
                   <i class="fas fa-money-bill-alt"></i> Asking Price:
-                  <span class="float-right">${{ listing.price | intcomma }}</span>
+                  <span class="float-right">R{{ listing.price | intcomma }}</span>
                 </li>
                 <li class="list-group-item text-secondary">
                   <i class="fas fa-bed"></i> Bedrooms:
@@ -117,12 +117,12 @@
             <div class="col-md-6">
               <ul class="list-group list-group-flush">
                 <li class="list-group-item text-secondary">
-                  <i class="fas fa-th-large"></i> Square Feet:
-                  <span class="float-right">{{ listing.sqft }}</span>
+                  <i class="fas fa-th-large"></i> Floor Area:
+                  <span class="float-right">{{ listing.sqft }} sqm</span>
                 </li>
                 <li class="list-group-item text-secondary">
-                  <i class="fas fa-square"></i> Lot Size:
-                  <span class="float-right">{{ listing.lot_size }} Acres
+                  <i class="fas fa-square"></i> Erf Size:
+                  <span class="float-right">{{ listing.lot_size }} sqm
                   </span>
                 </li>
                 <li class="list-group-item text-secondary">
@@ -130,7 +130,7 @@
                   <span class="float-right">{{ listing.list_date }}</span>
                 </li>
                 <li class="list-group-item text-secondary">
-                  <i class="fas fa-bed"></i> Realtor:
+                  <i class="fas fa-bed"></i> Agent:
                   <span class="float-right">{{ listing.realtor }}
                   </span>
                 </li>
@@ -151,7 +151,7 @@
           <div class="card mb-3">
             <img class="card-img-top" src="{{ listing.realtor.photo.url }}" alt="">
             <div class="card-body">
-              <h5 class="card-title">Property Realtor</h5>
+              <h5 class="card-title">Property Agent</h5>
               <h6 class="text-secondary">{{ listing.realtor }}</h6>
             </div>
           </div>
